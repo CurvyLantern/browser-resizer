@@ -10,19 +10,33 @@ body {
   background-color: #222222;
 }
 
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/fonts/Nunito-Regular.ttf") format("truetype");
+}
+
 body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Nunito";
 }
 
 form {
   display: flex;
+  flex-direction: column;
+  width: 90vw;
+  min-width: 150px;
+  max-width: 500px;
+
   gap: 10px;
 }
 
+label {
+  color: white;
+}
+
 input {
-  width: 400px;
   height: 50px;
   font-size: 18px;
 
@@ -33,7 +47,6 @@ input {
 }
 
 button {
-  width: 100px;
   height: 50px;
 
   display: flex;
